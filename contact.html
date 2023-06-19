@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TechIt - Contact Page</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Personal CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- NavBar -->
+        <header>
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-primary sticky-top" data-bs-theme="dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">TechIT</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto me-auto mb-0 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="products.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Branches
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Tel-Aviv</a></li>
+                                        <li><a class="dropdown-item" href="#">Haifa</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        <li><a class="dropdown-item position-relative" href="#">Jerusalem<span
+                                                    class="badge rounded-pill text-bg-primary position-absolute top-0 start-90">New!</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!-- Contact Form -->
+            <h1 class="text-center">Contact Us</h1>
+            <div class="container d-flex justify-content-center mt-3">
+                <form onsubmit="return validateForm()">
+                    <div class="mb-4 form-floating">
+                        <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
+                        <label for="name" class="form-label">First Name</label>
+                    </div>
+                    <div class="mb-4 form-floating">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder=" " required>
+                        <label for="lastName" class="form-label">Last Name</label>
+                    </div>
+                    <div class="mb-4 form-floating">
+                        <input type="email" class="form-control" id="email" name="email" placeholder=" " required>
+                        <label for="email" class="form-label">Email Address</label>
+                    </div>
+                    <div class="mb-4 form-floating">
+                        <textarea class="form-control" style="height: 12.5rem;" id="message" name="message"
+                            placeholder=" " required></textarea>
+                        <label for="message" class="form-label">Write Whatever</label>
+                    </div>
+                    <div class="status"></div>
+                    <button class="btn btn-primary w-100" type="submit">Send Us</button>
+                </form>
+            </div>
+        </main>
+        <!-- Boostrap JS -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- Personal JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+
+</html>

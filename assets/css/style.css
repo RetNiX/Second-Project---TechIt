@@ -1,0 +1,10 @@
+.carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+}
+.card img {
+    object-fit: cover;
+}
+form {
+    width: 28rem;
+}
